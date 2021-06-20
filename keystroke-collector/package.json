@@ -2,9 +2,11 @@
   "name": "~TODO~",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev --host",
+    "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
@@ -13,11 +15,11 @@
     "@typescript-eslint/parser": "^4.19.0",
     "eslint": "^7.22.0",
     "eslint-plugin-svelte3": "^3.2.0",
-    "svelte": "^3.29.0",
+    "svelte": "^3.34.0",
+    "svelte-check": "^2.0.0",
     "svelte-preprocess": "^4.0.0",
     "tslib": "^2.0.0",
-    "typescript": "^4.0.0",
-    "vite": "^2.2.3"
+    "typescript": "^4.0.0"
   },
   "type": "module"
 }
