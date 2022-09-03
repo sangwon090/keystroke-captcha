@@ -1,5 +1,5 @@
 <script>
-    let loggedin = false;
+    export let authorized = false;
 </script>
 
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
@@ -8,7 +8,7 @@
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-            {#if loggedin }
+            {#if authorized}
                 <a class="navbar-item" href="/logout">로그아웃</a>
             {:else}
                 <a class="navbar-item" href="/login">로그인</a>

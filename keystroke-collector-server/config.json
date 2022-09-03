@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "secret": "k3y57rok3 dYn4m1C2",
+    "mongodb": "mongodb://localhost:27017/keystroke-dynamics"
+}

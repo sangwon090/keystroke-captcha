@@ -1,5 +1,5 @@
 <script>
-    export let text;
+    export let typed;
 </script>
 
-<textarea class="textarea" bind:value={text} on:keyup on:keydown/>
+<textarea id="editor" class="textarea" bind:value={typed} on:keyup on:keydown on:compositionupdate disabled/>
